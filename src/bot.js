@@ -64,7 +64,7 @@ function createBot({ api, shop, adminId }) {
 
   const screens = {
     menu: (chatId, msgId) =>
-      show(chatId, `Добро пожаловать в ${shop.catalog.shopName}!\nВыберите, что сделать:`, mainMenu(), msgId),
+      show(chatId, `Добро пожаловать в ${shop.catalog.shopName}! ☕\n\n🧪 Это демо-бот из портфолио avekda.\nПопробуйте оформить заказ — всё работает как в настоящем боте.\n\nВыберите, что сделать:`, mainMenu(), msgId),
 
     about: (chatId, msgId) =>
       show(chatId, shop.catalog.about, inline([[button('⬅️ Меню', 'menu')]]), msgId),
